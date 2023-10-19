@@ -6,7 +6,7 @@ function Forms(props) {
         <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-500 to-green-400">
       <div className="w-2/4 h-2/4 p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-center">Post Album</h2>
-        <form method="post" action="/create">
+        <Form action="/create" method="post">
             <div className="mb-4">
               <input
                 className="inputFields"
@@ -52,7 +52,7 @@ function Forms(props) {
                 Add Item
               </button>
             </div>
-          </form>
+          </Form>
         </div>
       </div>
     );

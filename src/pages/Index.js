@@ -3,16 +3,19 @@ import Post from "../components/Post";
 import Nav from "../components/Navbar";
 import Hero from "../components/Hero";
 import Forms from "../components/Form";
+import Carousel from "../components/carousel";
 
 
 
 function Index (props){
 
    const albums = useLoaderData()
-  
+   const albumsArray = albums.map((album) => album.memory);
+
     return<>
         <Nav/>
         <Hero/>
+        <Carousel albums={albumsArray} />
         <Forms className="indexFormAll"/>           
         <h1 className="itemList marquee">All Albums</h1>
         <div className='bijay'>

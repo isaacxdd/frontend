@@ -27,7 +27,7 @@ function Show(props) {
         </div>
 
         <div className="text-center">
-          <h2 className="text-lg font-semibold text-gray-800">Delete This Car</h2>
+          <h2 className="text-lg font-semibold text-gray-800">Delete This Album</h2>
           <Form action={`/delete/${post.id}`} method="post">
             <button className="bg-red-500 hover:bg-red-600 text-white rounded-md py-2 px-4">Delete Album</button>
           </Form>
