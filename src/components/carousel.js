@@ -22,7 +22,7 @@ function Carousels({ albums }) {
               <img
                 className="object-contain w-full h-full"
                 src={album}
-                alt={`Image ${index}`}
+                alt={`album ${index}`}
               />
             </div>
           ))}

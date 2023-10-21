@@ -1,4 +1,4 @@
-import {Link, useLoaderData } from "react-router-dom";
+import {useLoaderData } from "react-router-dom";
 import Post from "../components/Post";
 import Nav from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -19,8 +19,8 @@ function Index (props){
         <Forms className="indexFormAll"/>           
         <h1 className="itemList marquee">All Albums</h1>
         <div className='bijay'>
-//     {albums.map((album) => <Post key={album.id} post={album}/>)} 
-//     </div>   
+     {albums.map((album) => <Post key={album.id} post={album}/>)} 
+     </div>   
 </>
 }
 
